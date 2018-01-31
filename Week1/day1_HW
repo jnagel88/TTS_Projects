@@ -1,0 +1,33 @@
+1>>
+cd /images/clipart/food
+
+2>>
+cd .. <<back to root>>
+cd e-texts/Po,EdgerAllen
+
+3>>
+ls
+
+4>>
+cd images
+pwd
+
+5>>
+mkdir photographs
+
+6>>
+cd photographs
+touch sunrise.jpg
+
+7>>
+mv sunrise.jpg ..
+
+8>>
+cd monkeys/like
+subl .
+
+9>>
+cd monkeys/like
+rm bananas.html
+
+
