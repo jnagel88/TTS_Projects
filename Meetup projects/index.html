@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			body {
+	            font-size: 20px;
+	            transition: all 2s;
+	        }
+	        button {
+	            margin-right: 20px;
+	            height: 35px;
+	            width: 70px;
+	            background-color: #fff;
+	            border: 1px solid #fff;
+	        }
+	        span, #name {
+	            cursor: pointer;
+	            transition: all 1s;
+	        }
+	        #fin {
+	            font-size: 30px;
+	            text-align: center;
+	            color: #fff;
+	            opacity: 0.0;
+	            transition: all 3s;
+	        }
+	        #controls {
+	            margin-top: 50px;
+	            opacity: 0.0;
+	            transition: all 2s;
+	        }
+		</style>
+	</head>
+	<body>
+		<div id="fin">
+			<h2>My name is</h2>
+		</div>
+
+		<div id="name">
+			<span id="j" class="letters">J</span>
+			<span id="o" class="letters">o</span>
+			<span id="e" class="letters">e</span>
+		</div>
+
+
+		<div id="controls">
+			<hr />
+			<button id="center"><|></button>
+			<button id="bg">BG</button>
+			<button id="color">Color</button>			
+		</div>
+
+
+
+	</body>
+	<script>
+		//variable decloration for Javascript
+		var size = 300;
+	    var unit = "px";
+	    var bg = "#80b0fc";
+	    var letters = document.getElementsByClassName("letters");
+
+		//letter sizing
+		document.getElementById('j').addEventListener("click", function(){ document.getElementById('j').style.fontSize = size + unit;});
+		document.getElementById('o').addEventListener("click", function(){ document.getElementById('o').style.fontSize = size + unit;});
+		document.getElementById('e').addEventListener("click", function(){ document.getElementById('e').style.fontSize = size + unit;});
+
+		//controls reveal
+		document.getElementById('controls').addEventListener("mouseover", function(){ document.getElementById('controls').style.opacity = 1; });
+
+		//controls functions
+		document.getElementById('center').addEventListener("click", function(){ document.getElementById('name').style.textAlign = "center"; });
+		document.getElementById('bg').addEventListener("click", function(){ document.body.style.backgroundColor = bg; });
+		
+		document.getElementById("color").addEventListener("click", function(){ 
+        for (var i = 0; i < letters.length; i++) {
+        	document.getElementById(letters[i].id).style.color = "white";
+        	}
+		document.getElementById("fin").style.opacity = 1;
+        document.getElementById("fin").style.fontSize = size/10 + unit;
+    });
+
+	</script>
+</html>
+
