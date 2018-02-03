@@ -1,7 +1,6 @@
-body {
+#body {
 	background-color: #b30000;
 	text-align: center;
-	
 }
 
 h1 {
@@ -11,7 +10,7 @@ h1 {
 	text-shadow:  2px 2px 4px #ff8566;
 }
 
-div {
+.body-div {
 	display: inline-block;
 	align-content: center;
 	border-style: solid;
@@ -33,11 +32,10 @@ div {
     width: 200px;
     height: 600px;
     margin: 10px;
-    padding: 5px;    
+    padding: 0px;    
     opacity: 1.0;
     background-color:  #ff6600;
-
-	
+    box-shadow: 3px 3px 2px #000000;	
 }
 
 iframe {
@@ -73,7 +71,7 @@ a:visited {
 
 /*Button properties*/
 
-.button {
+.button1 {
     position: relative;
     background-color: #ff8533;
     border: none;
@@ -90,7 +88,7 @@ a:visited {
     box-shadow: 3px 3px 2px #000000;
 }
 
-.button:after {
+.button1:after {
     content: "";
     background: #ffb380;
     display: block;
@@ -103,7 +101,7 @@ a:visited {
     transition: all 0.8s
 }
 
-.button:active:after {
+.button1:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
