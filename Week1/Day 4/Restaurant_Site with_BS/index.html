@@ -31,38 +31,41 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 			  <ul class="nav navbar-nav">
 				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			  </ul>
 			  <ul class="nav navbar-nav navbar-right">
-			    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 			  </ul>
 			</div>
 		</div>
 	</nav>
-
-	  <header class="container-fluid text-center"> Joe's 5 Favorite Places to Eat</header>
-
-<!-- Left Sidebar -->
-	<div class="container-fluid text-center">    
+<!-- main body container -->
+	<div class="container-fluid text-center">  
+		<!-- Left Sidebar -->  
 	  <div class="row content">
-			<div class="col-sm-1 sidenav">
-				<p><a href="#">Chick-Fil-A</a></p>
-				<p><a href="#">Pho Bistro</a></p>
-				<p><a href="#">link</a></p>
-				<p><a href="#">Link</a></p>
-				<p><a href="#">Link</a></p>
+			<div class="col-sm-2 sidenav">
+				<p><a href="http://www.chickFilA.com">Chick-Fil-A</a></p>
+				<p><a href="http://www.phobistro.biz/">Pho Bistro</a></p>
+				<p><a href="http://www.indiachaatcafedallas.com">India Chaat Cafe</a></p>
+				<p><a href="http://www.fuzzystacoshop.com">Fuzzy's Taco Shop</a></p>
+				<p><a href="https://kurausa.com/">Kura Revolving Sushi Bar</a></p>
 			</div>
 
-<!-- Center Text block -->
-			<div class="col-sm-10 text-left"> 
-				<h1>Welcome</h1>
+		<!-- Center Text block -->
+			<div class="col-sm-8 text-center"> 
+				<header class="container-fluid text-center">
+	  				<h1>Joe's 5 Favorite Places to Eat</h1>
+	  			</header>
+				<div class="col-sm-1">
+				<!-- spacer div -->
+				</div>
 
 			<!-- Chick-Fil-A -->
 				<div class="col-sm-2">
 					<a href="http://www.chickFilA.com">
-						<img src="http://thestamp.umd.edu/portals/0/Images/Food/chickFilA.jpg" class="img-responsive" alt="Chick-Fil-A Logo">
+						<img src="http://thestamp.umd.edu/portals/0/Images/Food/chickFilA.jpg" width="200px" class="img-responsive" alt="Chick-Fil-A Logo">
 						<button class="btn-lg">1. Chick-Fil-A</button> 
 						<!-- <h3>1. Chick-Fil-A</h3> -->
 					</a>	
@@ -80,6 +83,7 @@
 
 					<!-- screenshot maps/directions -->
 					<iframe src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d107093.34990071139!2d-96.9793271544427!3d32.98618144991843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!3e6!4m0!4m4!1s0x864c25e4d1bfd853%3A0x46ac6db7a5c0b5ac!3m2!1d32.986201!2d-96.90928699999999!5e0!3m2!1sen!2sus!4v1517334998957" class="img-responsive" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<hr/>
 				</div>
 			<!-- Pho Bistro -->
 				<div class="col-sm-2">
@@ -99,6 +103,7 @@
 
 					<!-- maps/directions -->
 					<iframe src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d107078.47571761292!2d-96.97915605411151!3d32.99843984619104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!3e6!4m0!4m4!1s0x864c25ed6ef92cc5%3A0x214f988be283442f!3m2!1d32.9984594!2d-96.90911589999999!5e0!3m2!1sen!2sus!4v1517335271425" width="400" height="300" frameborder="0" style="border:0" class="img-responsive" allowfullscreen></iframe>
+					<hr/>
 				</div>
 			<!-- India Chaat Cafe -->
 				<div class="col-sm-2">
@@ -116,6 +121,7 @@
 				
 					<!-- screenshot maps/directions -->
 					<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d214423.33086002618!2d-96.97134000338283!3d32.88852866369148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d32.7811295!2d-96.8068146!4m5!1s0x864c23ce8d6e5191%3A0xc7804092fe3656e9!2sIndia+Chaat+Cafe%2C+18101+Preston+Rd%2C+Dallas%2C+TX+75252!3m2!1d32.998929!2d-96.7987259!5e0!3m2!1sen!2sus!4v1517336628243" width="400" height="300" class="img-responsive" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<hr/>
 				</div>
 
 			<!-- Fuzzy Taco -->
@@ -135,12 +141,13 @@
 
 					<!-- screenshot maps/directions -->
 					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26762.890935603373!2d-96.8863214!3d33.0206088!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7b1b2a91af31a234!2sFuzzy&#39;s+Taco+Shop!5e0!3m2!1sen!2sus!4v1517451314154" width="400" height="300" class="img-responsive" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<hr/>
 				</div>
 			<!-- Kura Sushi -->
 				<div class="col-sm-2">
 					<a href="https://kurausa.com/">
-						<img src="https://media.glassdoor.com/sqll/1021463/kula-revolving-sushi-bar-squarelogo-1458257184653.png" alt="Kura Logo" width="300" class="img-responsive">
-						<button class="button1">5.Kura Sushi Bar </button>
+						<img src="https://mark.trademarkia.com/logo-images/kura-corporation-ltd/kula-revolving-sushi-bar-77785718.jpg" alt="Kura Logo"  class="img-responsive">
+						<button class="btn-lg">5.Kura Sushi Bar </button>
 					</a>
 					<p>The coolest sushi place you will ever go!</p>
 					<p><b>Fave dish:</b>Baked Salmon Crunch Roll</p>
@@ -154,13 +161,14 @@
 			
 					<!-- screenshot maps/directions -->
 					<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d107098.31398899674!2d-96.97777335455324!3d32.98208945116349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x864c25e31772ecff%3A0xda2494dd9288744a!2sKura+Revolving+Sushi+Bar%2C+2540+Old+Denton+Rd+%23140%2C+Carrollton%2C+TX+75006!3m2!1d32.982109!2d-96.9077332!5e0!3m2!1sen!2sus!4v1517337661090" width="400" height="300" class="img-responsive" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<hr/>
 				</div>
 
 
 			</div>
 
-<!-- Right sidebar -->
-			<div class="col-sm-1 sidenav">
+		<!-- Right sidebar -->
+			<div class="col-sm-2 sidenav">
 				<div class="well">
 					<p>ADS</p>
 				</div>
@@ -171,9 +179,9 @@
 	  </div>
 	</div>
 
-<!-- footer -->
+	<!-- footer -->
 	<footer class="container-fluid text-center">
-	  <p>Footer Text</p>
+	  <p>Thank you for visiting Joe's Eateries, Created By Nagel-Design</p>
 	</footer>
 
 </body>
