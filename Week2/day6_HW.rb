@@ -1,24 +1,23 @@
 
 # 1.
 
-# puts "Please enter youe class grade as a number."
-# grade = gets.chomp.to_i
+puts "Please enter your test score:"
+grade = gets.chomp.to_i
 
-# case grade
-# 	when 90..100
-# 		puts "you hav an A in class!"
-# 	when 80..89
-# 		puts "you hav a B in class."
-# 	when 70..79
-# 		puts "you hav an C in class, try harder."
-# 	when 60..69
-# 		puts "you hav an D in class... bro, com'n"
-# 	when 0..59
-# 		puts " you have an F... sorry homie..."
-# 	else
-# 		puts "wrong score."
-# end
-
+case grade
+	when 90..100
+		puts "you have an A in class!"
+	when 80..89
+		puts "you have a B in class."
+	when 70..79
+		puts "you have a C in class, try harder."
+	when 60..69
+		puts "you have a D in class... bro, com'n"
+	when 0..59
+		puts " you have an F... sorry homie..."
+	else
+		puts "wrong score."
+end
 
 ##########################################
 
@@ -180,19 +179,20 @@
 # 7. 
 # I know this doesnt work... It got late...
 
-arr =*(1..30)
+# arr =*(1..30)
 
-arr.each do |x|
-	if x % 3 == 0 
-		arr[x] = "Fizz"
-	elsif x % 5 == 0
-		arr[x] = "buzz"
-	elsif x % 3 == 0 && x % 5 == 0 
-		arr[x] = "FizzBuzz"
-	else
-		x
-	end
-end
-puts arr
+
+# arr.each do |x|
+# 	if  x % 3 == 0 && x % 5 == 0 
+# 		arr[x] = "FizzBuzz"
+# 	elsif x % 5 == 0
+# 		arr[x] = "buzz"
+# 	elsif x % 3 == 0
+# 		arr[x] = "Fizz"
+# 	else
+# 		return x
+# 	end
+# end
+# puts arr
 
 
