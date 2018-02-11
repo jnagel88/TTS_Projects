@@ -115,44 +115,53 @@ questions = []
 answers = []
 c = 1 
 score = 0
-
-puts "Quiz Builder"
-puts "How many questions do you want on your quiz?"
-count = gets.chomp.to_i
-	while count <= 0	
-		puts "invalid input."
-		puts "Provide an integer greater than zero (0):"
-		count = gets.chomp.to_i
+def quiz_builder
+	c = 1
+	puts "Quiz Builder"
+	puts "How many questions do you want on your quiz?"
+	count = gets.chomp.to_i
+		while count <= 0	
+			puts "invalid input."
+			puts "Provide an integer greater than zero (0):"
+			count = gets.chomp.to_i
+		end
+	count.times do
+		puts "please provide a question."
+		print "Question #{c}:"
+		q = gets.chomp
+		questions.push(q)
+		puts "Please provide the answer to question #{c}."
+		a = gets.chomp
+		answers.push(a)
+		c += 1
 	end
-count.times do
-	puts "please provide a question."
-	print "Question #{c}:"
-	q = gets.chomp
-	questions.push(q)
-	puts "Please provide the answer to question #{c}."
-	a = gets.chomp
-	answers.push(a)
-	c += 1
+
+	50.times do
+		puts
+	end
 end
 
-50.times do
-	puts
+
+def run_quiz
+	c = 1
+	questions.each do |x|
+		puts "Question#{c}"
+		puts x
+		print "your answer:"
+		response = gets.chomp
+		if response == answers[c-1]
+			score += 1
+			puts "correct"
+		else
+			puts "wrong"
+		end
+		c += 1
+	end 
 end
 
-c = 1
-questions.each do |x|
-	puts "Question#{c}"
-	puts x
-	print "your answer:"
-	response = gets.chomp
-	if response == answers[c-1]
-		score += 1
-		puts "correct"
-	else
-		puts "wrong"
-	end
-	c += 1
-end 
+quiz_builder
+
+run_quiz
 
 puts "You scored #{score} out of #{count}."
 grade = score.to_f / count.to_f * 100
