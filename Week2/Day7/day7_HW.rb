@@ -72,26 +72,26 @@
 ######################
 # Program Follows this comment.
 
-# puts "Provide an integer greater than zero (0):"
-# num1 = gets.chomp.to_i
-# 	while num1 <= 0	
-# 		puts "that is not a valid integer."
-# 		puts "Provide an integer greater than zero (0):"
-# 		num1 = gets.chomp.to_i
-# 	end
+puts "Provide an integer greater than zero (0):"
+num1 = gets.chomp.to_i
+	while num1 <= 0	
+		puts "that is not a valid integer."
+		puts "Provide an integer greater than zero (0):"
+		num1 = gets.chomp.to_i
+	end
 
-# puts"and one more..."
-# num2 = gets.chomp.to_i
-# 	while num2 <= 0	
-# 		puts "that is not a valid integer."
-# 		puts "Provide an integer greater than zero (0):"
-# 		num1 = gets.chomp.to_i
-# 	end
+puts"and one more..."
+num2 = gets.chomp.to_i
+	while num2 <= 0	
+		puts "that is not a valid integer."
+		puts "Provide an integer greater than zero (0):"
+		num1 = gets.chomp.to_i
+	end
 
-# answer = num1 / num2
-# remainder = num1 % num2
+answer = num1 / num2
+remainder = num1 % num2
 
-# puts "#{num1} divided by #{num2} is #{answer} with a remainder of #{remainder}"
+puts "#{num1} divided by #{num2} is #{answer} with a remainder of #{remainder}"
 
 ##################################################
 ##################################################

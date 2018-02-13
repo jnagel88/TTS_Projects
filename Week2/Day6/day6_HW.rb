@@ -60,22 +60,22 @@ end
 
 ############################################
 
-# 4. 
-# puts "Pig Latin Translator:"
-# puts "enter a word to translate:"
-# word = gets.chomp
-# letter =- word[0]
-# vowels = ["a","e","i","o","u"]
+4. 
+puts "Pig Latin Translator:"
+puts "enter a word to translate:"
+word = gets.chomp
+letter =- word[0]
+vowels = ["a","e","i","o","u"]
 
-# vowels.each do |x|
-# 	if word[0] == x
-# 		puts word + "way"
-# 	end
-# 	word.slice! letter
-# 		# word + letter + "ay"
-# end
+vowels.each do |x|
+	if word[0] == x
+		puts word + "way"
+	end
+	word.slice! letter
+		# word + letter + "ay"
+end
 
-# puts word + letter + "ay"
+puts word + letter + "ay"
 
 
 ##############################################

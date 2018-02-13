@@ -51,7 +51,6 @@ until $input == 0
 		else
 			# seed all teams
 		end
-		menu
 	end
 end
 puts "Program Terminated. Returning to Terminal..."

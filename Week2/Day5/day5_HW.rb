@@ -17,22 +17,22 @@
 
 #########################################
 
-# # Math response
-# puts "Give me a number, any number."
-# num1 = gets.chomp.to_i
+# Math response
+puts "Give me a number, any number."
+num1 = gets.chomp.to_i
 
-# puts " And one more..."
-# num2 = gets.chomp.to_i
+puts " And one more..."
+num2 = gets.chomp.to_i
 
-# print "Sum:"
-# puts num1 + num2
-# print "Difference:"
-# puts num1 - num2
-# print "product:"
-# puts num1 * num2
-# print "quotient:"
-# print "#{(num1 / num2)} Re "
-# puts (num1 % num2)
+print "Sum:"
+puts num1 + num2
+print "Difference:"
+puts num1 - num2
+print "product:"
+puts num1 * num2
+print "quotient:"
+print "#{(num1 / num2)} Re "
+puts (num1 % num2)
 
 #########################################3
 
@@ -57,20 +57,20 @@
 
 ###########################################
 
-puts "What is your age?"
-age = gets.chomp.to_i
+# puts "What is your age?"
+# age = gets.chomp.to_i
 
-ageSec = 31556926 * age
+# ageSec = 31556926 * age
 
-ageDays = 365 * age
+# ageDays = 365 * age
 
-puts "you are #{ageSec} seconds old!!"
+# puts "you are #{ageSec} seconds old!!"
 
-# Mercury
-print "On Mercury, you would be "
-puts ageDays * 87.97
+# # Mercury
+# print "On Mercury, you would be "
+# puts ageDays * 87.97
 
-# Venus
+# # Venus
 
 
 # Mars
