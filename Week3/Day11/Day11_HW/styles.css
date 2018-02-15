@@ -1,0 +1,9 @@
+img {
+	width: 200px;
+	margin: 5px;
+}
+
+img:click{
+	opacity: 75%;
+}
+	
