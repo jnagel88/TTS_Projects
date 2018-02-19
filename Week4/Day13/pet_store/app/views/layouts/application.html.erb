@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PetStore</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+<a href="http://localhost:3000/">Home</a>
+
+<a href="http://localhost:3000/about">About</a>
+<a href="http://localhost:3000/list">Pet list</a>
+
+    <%= yield %>
+  </body>
+</html>
