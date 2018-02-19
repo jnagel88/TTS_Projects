@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '/' => 'welcome#index'
+
   get 'ilovetocode' => 'welcome#index'
 
   resources :activities
