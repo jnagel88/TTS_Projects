@@ -9,6 +9,7 @@
       <th>Name</th>
       <th>Capital</th>
       <th>Population</th>
+      <th>Area</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +21,7 @@
         <td><%= state.name %></td>
         <td><%= state.capital %></td>
         <td><%= state.population %></td>
+        <th><%= state.area %></th>
         <td><%= link_to 'Show', state %></td>
         <td><%= link_to 'Edit', edit_state_path(state) %></td>
         <td><%= link_to 'Destroy', state, method: :delete, data: { confirm: 'Are you sure?' } %></td>
